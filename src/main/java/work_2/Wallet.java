@@ -8,8 +8,6 @@ public class Wallet {
 
         Wallet wallet = new Wallet();
 
-
-
         //Account account = wallet.create_user(new Account());
 /*
         System.out.println(account.getName() + " " + account.getFamily() + " "
