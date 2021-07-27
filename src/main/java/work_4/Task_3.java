@@ -1,8 +1,6 @@
 package work_4;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Task_3<T> {
     /*
@@ -18,9 +16,15 @@ public class Task_3<T> {
         Integer [] a = {1, 2, 3, 4, 5, 5, 5, 5, 6, 7, 8, 9, 9};
         String [] str = {"aaa","vvv","www","qsqs","vvvv", "aaa", "vvv"};
 
+        LinkedList <String> lin = new LinkedList<>();
+        lin.add("aaa");
+        lin.add("vvv");
+        lin.add("vvv");
+        lin.add("aaa");
+
         tTask_3.first_arr = tTask_3.return_arr(str);
         System.out.println(tTask_3.first_arr);
-        tTask_3.sort_set(tTask_3.first_arr);
+        tTask_3.sort_set(lin);
         //System.out.println("Set "+tTask_3.sort_set(tTask_3.first_arr));
 
         Iterator iterator = tTask_3.tree.iterator();
@@ -35,8 +39,8 @@ public class Task_3<T> {
     ArrayList<T> new_arr = new ArrayList<>();
     TreeSet<T> tree = new TreeSet<>();
 
-    TreeSet<T> sort_set(ArrayList <T>arrayList){
-        tree.addAll(arrayList);
+    TreeSet<T> sort_set(Collection <T>c){
+        tree.addAll(c);
         return tree;
     }
 
