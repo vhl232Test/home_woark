@@ -16,15 +16,15 @@ public class Task_3<T> {
         Integer [] a = {1, 2, 3, 4, 5, 5, 5, 5, 6, 7, 8, 9, 9};
         String [] str = {"aaa","vvv","www","qsqs","vvvv", "aaa", "vvv"};
 
-        LinkedList <String> lin = new LinkedList<>();
-        lin.add("aaa");
-        lin.add("vvv");
-        lin.add("vvv");
-        lin.add("aaa");
+
+        tTask_3.lin.add("aaa");
+        tTask_3.lin.add("vvv");
+        tTask_3.lin.add("vvv");
+        tTask_3.lin.add("aaa");
 
         tTask_3.first_arr = tTask_3.return_arr(str);
         System.out.println(tTask_3.first_arr);
-        tTask_3.sort_set(lin);
+        tTask_3.sort_set(tTask_3.lin);
         //System.out.println("Set "+tTask_3.sort_set(tTask_3.first_arr));
 
         Iterator iterator = tTask_3.tree.iterator();
@@ -34,6 +34,8 @@ public class Task_3<T> {
 
         System.out.println("New ArrayList " + tTask_3.new_arr);
     }
+
+    LinkedList <T> lin = new LinkedList<>();
 
     ArrayList<T>  first_arr;
     ArrayList<T> new_arr = new ArrayList<>();

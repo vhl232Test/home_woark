@@ -106,7 +106,8 @@ Reverse в котором этот массив поменяет все свои
     int read_number_from_console(){
         String text = """
                 Please, enter a number 
-                to determine the length of the array: """;
+                to determine the length of the array: 
+                """;
 
         System.out.println(text);
         Scanner scanner = new Scanner(System.in);
